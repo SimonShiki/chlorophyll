@@ -1,0 +1,21 @@
+{
+    "shiki.chlorophyll.name": "叶绿素",
+    "shiki.chlorophyll.description": "与名字毫不相干的实用扩展",
+    "shiki.chlorophyll.category": "叶绿素",
+    "shiki.chlorophyll.upload": "上传并读取一个 [AS] 文件",
+    "shiki.chlorophyll.as.text": "文本",
+    "shiki.chlorophyll.as.binary": "二进制",
+    "shiki.chlorophyll.as.dataUrl": "base64",
+    "shiki.chlorophyll.url": "获取该网站的 [TYPE]",
+    "shiki.chlorophyll.type.domain": "域名",
+    "shiki.chlorophyll.type.url": "URL",
+    "shiki.chlorophyll.type.protocol": "协议",
+    "shiki.chlorophyll.type.port": "端口",
+    "shiki.chlorophyll.type.pathname": "路径",
+    "shiki.chlorophyll.type.hash": "哈希",
+    "shiki.chlorophyll.type.queries": "参数",
+    "shiki.chlorophyll.query": "获取参数中 [NAME] 的值",
+    "shiki.chlorophyll.open": "在 [METHOD] 中打开 https://codingclip.com/[PATH]",
+    "shiki.chlorophyll.method.blank": "新标签页",
+    "shiki.chlorophyll.method.self": "当前标签页"
+}

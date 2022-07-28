@@ -1,0 +1,21 @@
+{
+    "shiki.chlorophyll.name": "Chlorophyll",
+    "shiki.chlorophyll.description": "Useful extension that has nothing to do with the name.",
+    "shiki.chlorophyll.category": "Chlorophyll",
+    "shiki.chlorophyll.upload": "upload [AS] file and read",
+    "shiki.chlorophyll.as.text": "text",
+    "shiki.chlorophyll.as.binary": "binary",
+    "shiki.chlorophyll.as.dataUrl": "base64",
+    "shiki.chlorophyll.url": "get the [TYPE] of this site",
+    "shiki.chlorophyll.type.domain": "domain",
+    "shiki.chlorophyll.type.url": "URL",
+    "shiki.chlorophyll.type.protocol": "protocol",
+    "shiki.chlorophyll.type.port": "port",
+    "shiki.chlorophyll.type.pathname": "pathname",
+    "shiki.chlorophyll.type.hash": "hash",
+    "shiki.chlorophyll.type.queries": "queries",
+    "shiki.chlorophyll.query": "get the [NAME] in query",
+    "shiki.chlorophyll.open": "open https://codingclip.com/[PATH] in [METHOD]",
+    "shiki.chlorophyll.method.blank": "new tab",
+    "shiki.chlorophyll.method.self": "this tab"
+}
