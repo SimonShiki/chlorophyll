@@ -17,5 +17,7 @@
     "shiki.chlorophyll.query": "get the [NAME] in query",
     "shiki.chlorophyll.open": "open https://codingclip.com/[PATH] in [METHOD]",
     "shiki.chlorophyll.method.blank": "new tab",
-    "shiki.chlorophyll.method.self": "this tab"
+    "shiki.chlorophyll.method.self": "this tab",
+    "shiki.chlorophyll.write": "set [KEY] to [VALUE]",
+    "shiki.chlorophyll.read": "read [KEY] in local storage"
 }

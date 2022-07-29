@@ -17,5 +17,7 @@
     "shiki.chlorophyll.query": "获取参数中 [NAME] 的值",
     "shiki.chlorophyll.open": "在 [METHOD] 中打开 https://codingclip.com/[PATH]",
     "shiki.chlorophyll.method.blank": "新标签页",
-    "shiki.chlorophyll.method.self": "当前标签页"
+    "shiki.chlorophyll.method.self": "当前标签页",
+    "shiki.chlorophyll.write": "设置 [KEY] 为 [VALUE]",
+    "shiki.chlorophyll.read": "读取本地存储中的 [KEY]"
 }

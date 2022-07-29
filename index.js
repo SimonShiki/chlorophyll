@@ -100,13 +100,13 @@ class Chlorophyll extends Extension {
             },
             function: (args) => {
                 switch (args.TYPE) {
-                case 'domain': return window.location.host;
-                case 'url': return window.location.href;
-                case 'protocol': return window.location.protocol;
-                case 'port': return window.location.port;
-                case 'pathname': return window.location.pathname;
-                case 'hash': return window.location.hash;
-                case 'search': return window.location.search;
+                case 'domain': return window.location.host || '';
+                case 'url': return window.location.href || '';
+                case 'protocol': return window.location.protocol || '';
+                case 'port': return window.location.port || '';
+                case 'pathname': return window.location.pathname || '';
+                case 'hash': return window.location.hash || '';
+                case 'search': return window.location.search || '';
                 default: return;
                 }
             }
@@ -125,8 +125,8 @@ class Chlorophyll extends Extension {
             function: (args) => {
                 const reg = new RegExp('(^|&)' + args.NAME + '=([^&]*)(&|$)', 'i');
                 const result = window.location.search.substr(1).match(reg);
-                if (result !== null) return unescape(result[2]);
-                return;
+                if (result !== null) return unescape(result[2]) || '';
+                return '';
             }
         });
         api.addBlock({
@@ -170,6 +170,44 @@ class Chlorophyll extends Extension {
                 }
             }
         });
+        api.addBlock({
+            opcode: 'shiki.chlorophyll.write',
+            type: type.BlockType.COMMAND,
+            messageId: 'shiki.chlorophyll.write',
+            categoryId: 'shiki.chlorophyll.category',
+            param: {
+                KEY: {
+                    type: type.ParameterType.STRING,
+                    default: 'key'
+                },
+                VALUE: {
+                    type: type.ParameterType.STRING,
+                    default: 'value'
+                }
+            },
+            function: (args) => {
+                if (localStorage) {
+                    localStorage.setItem(args.KEY, args.VALUE);
+                }
+            }
+        });
+        api.addBlock({
+            opcode: 'shiki.chlorophyll.read',
+            type: type.BlockType.REPORTER,
+            messageId: 'shiki.chlorophyll.read',
+            categoryId: 'shiki.chlorophyll.category',
+            param: {
+                KEY: {
+                    type: type.ParameterType.STRING,
+                    default: 'key'
+                }
+            },
+            function: (args) => localStorage ? localStorage.getItem(args.KEY) : ''
+        });
+    }
+    
+    onUninit () {
+        api.removeCategory('shiki.chlorophyll.category');
     }
 }
 
