@@ -19,5 +19,7 @@
     "shiki.chlorophyll.method.blank": "new tab",
     "shiki.chlorophyll.method.self": "this tab",
     "shiki.chlorophyll.write": "set [KEY] to [VALUE]",
-    "shiki.chlorophyll.read": "read [KEY] in local storage"
+    "shiki.chlorophyll.read": "read [KEY] in local storage",
+    "shiki.chlorophyll.dark": "is in dark mode?",
+    "shiki.chlorophyll.hidden": "is hidden?"
 }

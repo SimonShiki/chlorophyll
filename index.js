@@ -204,6 +204,20 @@ class Chlorophyll extends Extension {
             },
             function: (args) => localStorage ? localStorage.getItem(args.KEY) : ''
         });
+        api.addBlock({
+            opcode: 'shiki.chlorophyll.dark',
+            type: type.BlockType.BOOLEAN,
+            messageId: 'shiki.chlorophyll.dark',
+            categoryId: 'shiki.chlorophyll.category',
+            function: () => !!window.matchMedia('(prefers-color-scheme: dark)').matches
+        });
+        api.addBlock({
+            opcode: 'shiki.chlorophyll.hidden',
+            type: type.BlockType.BOOLEAN,
+            messageId: 'shiki.chlorophyll.hidden',
+            categoryId: 'shiki.chlorophyll.category',
+            function: () => !!document.hidden
+        });
     }
     
     onUninit () {

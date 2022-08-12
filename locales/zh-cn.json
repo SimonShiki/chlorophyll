@@ -19,5 +19,7 @@
     "shiki.chlorophyll.method.blank": "新标签页",
     "shiki.chlorophyll.method.self": "当前标签页",
     "shiki.chlorophyll.write": "设置 [KEY] 为 [VALUE]",
-    "shiki.chlorophyll.read": "读取本地存储中的 [KEY]"
+    "shiki.chlorophyll.read": "读取本地存储中的 [KEY]",
+    "shiki.chlorophyll.dark": "开启暗色模式了吗?",
+    "shiki.chlorophyll.hidden": "网页失去焦点了吗?"
 }
